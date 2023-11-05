@@ -30,6 +30,22 @@ def enhance_image(image, enhancement_type):
 # Streamlit app title
 st.title("Image Enhancement App")
 
+st.write("Name: Shreyash Anil Holkar")
+st.write("Roll No: 175")
+st.write("Division: C")
+
+# Set the background color using HTML
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #87CEEB; /* Set your desired background color here */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Sidebar with enhancement options
 st.sidebar.title("Enhancement Options")
 enhancement_type = st.sidebar.selectbox("Select Enhancement Type", ["Bilateral Filtering", "Unsharp Masking", "Saturation Enhancement", "Gamma Correction", "Edge Enhancement (Laplacian)"])
